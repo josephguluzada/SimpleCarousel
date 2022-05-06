@@ -1,0 +1,53 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    overflow-x: hidden;
+  }
+  
+  .slider {
+    width: 100%;
+    height: 500px;
+  }
+  
+  .slider .container {
+    position: relative;
+    width: 480px;
+    height: 640px;
+    margin: 50px auto;
+  }
+  
+  .slider .container .arrows {
+    position: absolute;
+    top: 38%;
+    left: 5%;
+    width: 120%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 9999999;
+  }
+  
+  .slider .container .arrows img {
+    filter: invert(1);
+  }
+  
+  .slider .container .images {
+    display: flex;
+    position: relative;
+  }
+  
+  .slider .container .images .image {
+    position: absolute;
+    opacity: 0;
+    transition: opacity .5s ease;
+  }
+  
+  .slider .container .images .image.active {
+    opacity: 1;
+
+  }
+  
